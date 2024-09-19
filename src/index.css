@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+.lg\:mt-32{
+  margin-top: 2rem !important;
+}
+* {
+  font-family: "Noto Sans", sans-serif;
+  /* font-optical-sizing: auto; */
+  /* font-weight: <weight>; */
+  /* font-style: normal; */
+  /* font-variation-settings: "wdth" 100; */
+  /* font-weight: 800; */
+  /* font-style: normal; */
+}
+
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary-color py-2 px-4 text-home-bg font-semibold rounded-md hover:bg-home-bg hover:text-primary-color transition-all active:bg-black active:text-home-bg;
+  }
+  .white-card-wrapper {
+    @apply bg-white pt-7 pb-7 px-4 rounded-2xl;
+  }
+}
+
+
+ 
